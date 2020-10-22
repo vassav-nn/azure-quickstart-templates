@@ -4,16 +4,17 @@ set -e -x
 sudo -s
 
 # install python 3.6
-add-apt-repository -y ppa:deadsnakes/ppa
-apt update
-apt install -y python3.6
-apt install -y python3.6-dev
-apt install -y libcairo2-dev
+#add-apt-repository -y ppa:deadsnakes/ppa
+#apt update
+#apt install -y python3.6
+#apt install -y python3.6-dev
+#apt install -y libcairo2-dev
 
-rm /usr/bin/python3
-ln -s /usr/bin/python3.6 /usr/bin/python3
+#rm /usr/bin/python3
+#ln -s /usr/bin/python3.6 /usr/bin/python3
 
 # install packages
+python3 -V
 python3 -m pip install --upgrade pip setuptools
 python3 -m pip install pypandoc
 python3 -m pip install PyYAML
