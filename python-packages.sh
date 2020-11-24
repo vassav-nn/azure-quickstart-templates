@@ -18,11 +18,11 @@ python3 -V
 python3 -m pip install --upgrade pip setuptools
 python3 -m pip install pypandoc
 python3 -m pip install PyYAML
-python3 -m pip install pandas==1.0.5 kmodes numpy metaphone unidecode StringDist rapidfuzz nltk phonenumbers python-dateutil geotext==0.4.0 spacy sklearn
-python3 -m pip install py4j==0.10.9.1 pyhocon pyspark==3.0.1 wordninja pyspellchecker cleanco gensim scipy ipython jupyter sympy nose python-louvain
+python3 -m pip install pandas==0.25.3 kmodes numpy metaphone unidecode StringDist rapidfuzz nltk phonenumbers python-dateutil geotext==0.4.0 spacy sklearn
+python3 -m pip install py4j==0.10.7 pyhocon pyspark==2.4.4 wordninja pyspellchecker cleanco gensim scipy ipython jupyter sympy nose python-louvain
 python3 -m pip install -force-reinstall --upgrade requests requests_toolbelt pyOpenSSL cryptography adal
 python3 -m pip install six pyasn1-modules -U
-python3 -m pip install pyap pyarrow==0.15.1 zipp==1.0.0 pycairo==1.13.4 recordlinkage
+python3 -m pip install pyap pyarrow==0.14.0 zipp==1.0.0 pycairo==1.13.4 recordlinkage
 python3 -m spacy download en_core_web_sm
 python3 -m nltk.downloader punkt
 mv -v /root/nltk_data/ /usr/share || true
